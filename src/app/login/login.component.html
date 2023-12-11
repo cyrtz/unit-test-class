@@ -1,1 +1,50 @@
-<p>login works!</p>
+<div mat-dialog-content style="background: #F2E6E6; text-align: center; padding: 12px;" fxLayout="column">
+    <div class="header-div">
+        <h1>會員登入</h1>
+    </div>
+    <div class="form-div" fxLayout="column" fxLayoutGap="12px">
+        <div class="form-contain-div" fxFlex="30">
+            <mat-form-field class="input-div">
+                <mat-label>Enter your email</mat-label>
+                <input matInput placeholder="example@example.com" [formControl]="email" required>
+                <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
+            </mat-form-field>
+            <br>
+        </div>
+        <div class="form-contain-div" fxFlex="30">
+            <mat-form-field class="input-div">
+                <mat-label>Enter your password</mat-label>
+                <input matInput placeholder="" [formControl]="password" required>
+                <mat-error *ngIf="password.invalid">{{getPasswordErrorMessage()}}</mat-error>
+            </mat-form-field>
+        </div>
+        <div fxFlex="40" fxLayout="column" fxLayoutAlign="space-around center" style="display: flex; margin-bottom: 12px;">
+            <div fxLayout="row" fxLayoutAlign="space-between center" style="width: 100%;">
+                <div>
+                    <mat-checkbox value="1">記住我的密碼</mat-checkbox>
+                </div>
+                <div>
+                    <button mat-button color="primary">忘記密碼？</button>
+                </div>
+            </div>
+            <div  fxLayout="row" fxLayoutAlign="end center" style="width: 100%;">
+                <div>
+                    <button mat-flat-button>登入</button>
+                </div>
+            </div>
+            <!-- <div fxLayout="row" fxLayoutAlign="space-between"> -->
+            <!-- <div style="width: 40%;"> -->
+            <!-- <span class="pas-remember-forgot-div"> -->
+            <!-- <mat-checkbox value="1">記住我的密碼</mat-checkbox> -->
+            <!-- </div> -->
+            <!-- <div  style="width: 40%;">
+                    <a href="#">忘記密碼？</a>
+                </div> -->
+            <!-- </span> -->
+            <!-- </div> -->
+            <!-- <div>
+                <button mat-raised-button>登入</button>
+            </div> -->
+        </div>
+    </div>
+</div>

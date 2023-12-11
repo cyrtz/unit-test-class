@@ -1,0 +1,49 @@
+mat-typography {
+    background-color: #F2E6E6;
+}
+
+.header-div {
+    // background: #F2E6E6;
+    text-align: center;
+    width: 100%;
+}
+
+// .header-div > span {
+//     font-size: 30px;
+//     color: black;
+//     position: absolute;
+//     top: 15%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+// }
+button {
+    float: right;
+}
+
+.form-div {
+    width: 50%;
+    margin: auto;
+}
+
+.form-contain-div {
+    // width: 100%;
+    // position: relative;
+    // left: 50%;
+}
+
+.input-div {
+    width: 100%;
+}
+
+.form-div>button {
+    padding: 12px;
+    font-size: 20px;
+}
+
+.pas-remember-forgot-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // position: relative;
+    // left: 50%;
+}
